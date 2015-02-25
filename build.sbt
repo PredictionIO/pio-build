@@ -19,7 +19,7 @@ name := "pio-build"
 
 versionWithGit
 
-git.baseVersion := "0.1"
+git.baseVersion := "0.1.0"
 
 organization := "io.prediction"
 
