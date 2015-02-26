@@ -19,7 +19,7 @@ name := "pio-build"
 
 versionWithGit
 
-git.baseVersion := "0.1.0"
+git.baseVersion := "0.1.1"
 
 organization := "io.prediction"
 
@@ -38,6 +38,6 @@ bintrayPublishSettings
 
 repository in bintray := "sbt-plugins"
 
-licenses += ("Apache-2.0", url("https://www.apache.org/licenses/LICENSE-2.0.html"))
+bintrayOrganization in bintray := Some("predictionio")
 
-bintrayOrganization in bintray := None
+licenses += ("Apache-2.0", url("https://www.apache.org/licenses/LICENSE-2.0.html"))
