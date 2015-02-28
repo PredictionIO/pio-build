@@ -18,7 +18,7 @@ libraryDependencies ++= Seq(
 ```
 
 When one builds an engine template (`pio build`) with a mismatched version of
-PredictionIO, such as 0.8.7, the build process will succeed without error. When
+PredictionIO, such as 0.9.0, the build process will succeed without error. When
 doing `pio train`, however, strange errors could occur, such as the infamous
 `java.lang.AbstractMethodError`, with no useful information for debugging.
 
@@ -41,7 +41,7 @@ libraryDependencies ++= Seq(
 Add the following to your engine template's `project/pio.sbt`
 
 ```scala
-addSbtPlugin("io.prediction" % "pio-build" % "0.1.0")
+addSbtPlugin("io.prediction" % "pio-build" % "0.9.0")
 ```
 
 and modify your engine template's `build.sbt` to use `pioVersion` as shown

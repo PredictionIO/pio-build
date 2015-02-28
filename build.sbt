@@ -13,13 +13,10 @@
 // limitations under the License.
 
 import bintray.Keys._
-import com.typesafe.sbt.SbtGit._
 
 name := "pio-build"
 
-versionWithGit
-
-git.baseVersion := "0.1.1"
+version := "0.9.0"
 
 organization := "io.prediction"
 
@@ -28,9 +25,6 @@ scalaVersion := "2.10.4"
 scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature")
 
 sbtPlugin := true
-
-libraryDependencies ++= Seq(
-  "org.json4s" %% "json4s-jackson" % "3.2.10")
 
 publishMavenStyle := false
 
