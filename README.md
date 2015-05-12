@@ -38,7 +38,7 @@ libraryDependencies ++= Seq(
 
 ## Usage
 
-Add the following to your engine template's `project/pio.sbt`
+Add the following to your engine template's `project/pio-build.sbt`
 
 ```scala
 addSbtPlugin("io.prediction" % "pio-build" % "0.9.0")
